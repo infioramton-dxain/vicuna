@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily 06:30 ET fire of the Mac mini trading agent
+
+[Timer]
+OnCalendar=Mon..Fri 06:30
+Persistent=true
+Unit=agent-loop.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Mac mini trading agent — daily decision loop
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/agent/agent
+Environment=PYTHONPATH=/home/agent/agent/src
+ExecStart=/home/agent/agent/venv/bin/python -m agent.main
+StandardOutput=append:/home/agent/agent/logs/agent.log
+StandardError=append:/home/agent/agent/logs/agent.log
+TimeoutStartSec=600

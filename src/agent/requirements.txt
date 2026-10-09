@@ -1,0 +1,4 @@
+python-dotenv>=1
+alpaca-py>=0.30
+openai>=1.40
+google-generativeai>=0.7
